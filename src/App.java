@@ -57,7 +57,20 @@ public class App {
     public static int maxWordLength(String sentence){
 
 
-        return -1; //this is a placeholder
+        String[] parts = sentence.split(" ");
+        int i = 0;
+          
+        int longest = 0;
+        while( i < parts.length){
+           if(parts[i].length() > longest ){
+               longest = parts[i].length();
+              
+           }
+           i++; 
+        }
+
+        return longest;
+
     }
 
 
